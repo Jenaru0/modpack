@@ -3,11 +3,11 @@ filename = "Structory_1.21.x_v1.3.12.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "1978f613465c86c0d40f5cbfeeb8ab80407e21fe"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/aKCwCJlY/versions/qm2RM1eD/Structory_1.21.x_v1.3.12.jar"
+hash-format = "sha512"
+hash = "8df96ecbc05380f9969a23bc322aec0b5f12fe75873f02cbf4d0bd855dcb8254fd0f9a448fdfdaea160382e7fe9cc68e0122a01019179cec846c777ff7188ac7"
 
 [update]
-[update.curseforge]
-file-id = 7078278
-project-id = 636540
+[update.modrinth]
+mod-id = "aKCwCJlY"
+version = "qm2RM1eD"
