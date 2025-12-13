@@ -1,0 +1,13 @@
+name = "Server Pack Master"
+author = "Jesus NR"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "2877a105e60321531e823f9ad4725a510f13309f688fb86f58351c53d6b848ff"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.216"

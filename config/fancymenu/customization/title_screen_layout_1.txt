@@ -1,0 +1,234 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = title_screen
+  render_custom_elements_behind_vanilla = false
+  is_enabled = true
+  randommode = false
+  keepaspectratio = false
+}
+
+# =================================================================
+# FONDO DEL MENÚ (Background Image)
+# =================================================================
+menu_background {
+  background_type = image
+  # Asegúrate de que esta imagen exista en /config/fancymenu/assets/
+  image_path = fondo_servidor.png
+  slide = false
+  repeat_texture = false
+  parallax = true
+  parallax_intensity = 0.05
+  invert_parallax = false
+}
+
+# =================================================================
+# OCULTAR ELEMENTOS VANILLA (Limpieza)
+# Se ocultan todos los botones y textos originales para empezar de cero.
+# =================================================================
+
+# Botón Singleplayer
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:mc_titlescreen_singleplayer_button
+}
+
+# Botón Multiplayer
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:mc_titlescreen_multiplayer_button
+}
+
+# Botón Realms
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:mc_titlescreen_realms_button
+}
+
+# Botón Mods (Forge/Fabric)
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:forge_titlescreen_mods_button
+}
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:fabric_titlescreen_mods_button
+}
+
+# Botón Idioma (Opcional, descomentar si se quiere ocultar)
+# customization {
+#   action = hidebutton
+#   identifier = button_compatibility_id:mc_titlescreen_language_button
+# }
+
+# Botón Opciones (Vanilla)
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:mc_titlescreen_options_button
+}
+
+# Botón Salir (Vanilla)
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:mc_titlescreen_quit_button
+}
+
+# Botón Accesibilidad
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:mc_titlescreen_accessibility_button
+}
+
+# Logo de Minecraft (Arriba al centro)
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:minecraft_logo_widget
+}
+
+# Texto Splash (El texto amarillo parpadeante)
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:minecraft_splash_widget
+}
+
+# Texto de Copyright (Abajo)
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:title_screen_copyright_button
+}
+
+# Versión del Juego / Branding (Abajo a la izquierda)
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:minecraft_branding_widget
+}
+
+# Iconos de Notificación de Realms
+customization {
+  action = hidebutton
+  identifier = button_compatibility_id:minecraft_realms_notification_icons_widget
+}
+
+
+# =================================================================
+# ELEMENTOS PERSONALIZADOS (Tu Menú Profesional)
+# =================================================================
+
+# --- PANEL DE FONDO ---
+# Un panel semitransparente detrás de los botones para darles contraste.
+element {
+  type = image
+  identifier = panel_botones_fondo
+  # Imagen semitransparente en /assets/
+  image_path = panel_fondo.png
+  x = 0
+  y = 0
+  width = 250
+  height = 200
+  orientation = mid-centered
+  layer = bottom
+  stretch_x = false
+  stretch_y = false
+}
+
+# --- TÍTULO DEL SERVIDOR ---
+element {
+  type = text
+  identifier = titulo_servidor
+  text = **MI SERVIDOR PRO**
+  x = 0
+  y = -80
+  scale = 2.0
+  alignment = center
+  shadow = true
+  orientation = mid-centered
+  color = #FFFFFF
+}
+
+# --- BOTÓN PRINCIPAL: JUGAR (Conectar al Servidor) ---
+element {
+  type = button
+  identifier = btn_jugar_server
+  label = **ENTRAR AL SERVIDOR**
+  
+  # Posición y Tamaño
+  x = 0
+  y = -20
+  width = 200
+  height = 40
+  orientation = mid-centered
+  
+  # Acción: Conectar directo a la IP
+  action_type = joinserver
+  # ¡REEMPLAZA ESTO CON TU IP REAL!
+  action_value = 161.132.53.113
+  
+  # Texturas Personalizadas (Deben estar en /assets/)
+  texture_normal = boton_grande_normal.png
+  texture_hovered = boton_grande_hover.png
+  
+  # Sonidos (Opcional)
+  sound_click = ui.button.click
+  sound_hover = ui.button.click
+}
+
+# --- BOTÓN: OPCIONES ---
+element {
+  type = button
+  identifier = btn_opciones_custom
+  label = Opciones
+  
+  # Posición y Tamaño
+  x = 0
+  y = 35
+  width = 95
+  height = 30
+  orientation = mid-centered
+  
+  # Acción: Abrir menú de opciones vanilla
+  action_type = open_gui
+  action_value = options_screen
+  
+  # Texturas Personalizadas
+  texture_normal = boton_peque_normal.png
+  texture_hovered = boton_peque_hover.png
+}
+
+# --- BOTÓN: SALIR ---
+element {
+  type = button
+  identifier = btn_salir_custom
+  label = Salir
+  
+  # Posición y Tamaño (Al lado de Opciones)
+  x = 105 # 0 (centro) + 95 (ancho btn opciones) + 10 (espacio)
+  y = 35
+  width = 95
+  height = 30
+  # Anclado al botón de opciones para moverse juntos
+  orientation = bottom-right:btn_opciones_custom
+  # Ajuste fino relativo al anclaje
+  anchor_offset_x = 10
+  anchor_offset_y = 0
+  
+  # Acción: Cerrar el juego
+  action_type = quit_game
+  
+  # Texturas Personalizadas
+  texture_normal = boton_peque_normal.png
+  texture_hovered = boton_peque_hover.png
+}
+
+# --- TEXTO DE PIE DE PÁGINA (Opcional) ---
+element {
+  type = text
+  identifier = footer_texto
+  text = Cliente de Mods v1.0 - ¡Bienvenido!
+  x = 5
+  y = -5
+  scale = 1.0
+  alignment = left
+  shadow = true
+  orientation = bottom-left
+  color = #AAAAAA
+}
