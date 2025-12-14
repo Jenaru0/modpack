@@ -1143,6 +1143,11 @@ hash = "666de5e89e4537b9b758d642952efbd67c25d9d3a88a6ebd481962508851d001"
 metafile = true
 
 [[files]]
+file = "mods/worldedit.pw.toml"
+hash = "f2dfce29433a6b2a3349db5f4913f4077c74d2e7982c8c4ec51fac5ab09d21ad"
+metafile = true
+
+[[files]]
 file = "mods/yungs-api-neoforge.pw.toml"
 hash = "80f8b077b7fc1adfd2f895d79d004e09099b6ed5eaf9e8b0c7cd42759d8c18dd"
 metafile = true
