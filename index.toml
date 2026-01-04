@@ -714,6 +714,11 @@ hash = "531d3dd3deb7479e3fd1496a7c2db8606bc7affa33fc57eccddc9904c0ac559e"
 metafile = true
 
 [[files]]
+file = "mods/companions-mod.pw.toml"
+hash = "a2be95672259cb176b9b212bde4f5e4f295eee6bc083d3e3d07dd7f6e04e9df9"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 hash = "42ffb6f5835250003da6ca3667ff751709ea295faee43b49c365b0f6c1e8f4d8"
 metafile = true
@@ -901,6 +906,16 @@ metafile = true
 [[files]]
 file = "mods/just-zoom.pw.toml"
 hash = "5345bb641d6b9307c6a05f12885315537386519476bd2aee79d9fd1181268a7a"
+metafile = true
+
+[[files]]
+file = "mods/kaleidoscope-cookery.pw.toml"
+hash = "f1d40721df451ea6cfd9c39a5fc2fecae559a44f10a6a85212b63db0a59bb320"
+metafile = true
+
+[[files]]
+file = "mods/knight-lib.pw.toml"
+hash = "012b7d751dda6a07e55100ff6048377ba488ab78793bd4506c04e88b90358dcc"
 metafile = true
 
 [[files]]
