@@ -699,6 +699,11 @@ hash = "3024466ae43de66612dc5ec4cfe5b3a273f71cee29fc6940308798a817d561b6"
 metafile = true
 
 [[files]]
+file = "mods/chisels-bits.pw.toml"
+hash = "6131963e3ef7760cf0f98d01d11bdf58781b4bc47e0a6d3349cca2e7cbedb30b"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "22286fa216349c0767808903a0a38662857d2adee54950a18cbf26c167a06029"
 metafile = true
@@ -754,6 +759,11 @@ hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
 metafile = true
 
 [[files]]
+file = "mods/diagonal-fences.pw.toml"
+hash = "db153992e71c2c1ca7643ad93d11f1276cada2843879cd01909abef2f2ed9df9"
+metafile = true
+
+[[files]]
 file = "mods/dungeon-crawl.pw.toml"
 hash = "589e6549cfe4f211abd2829fab1d00d9906a72d22b96f0fdb7e11fbb277ac1a1"
 metafile = true
@@ -794,6 +804,11 @@ hash = "77d59ac7bb40c00032d68d45d777e8c1c0dc22596afe0c84572104a67dabb1d5"
 metafile = true
 
 [[files]]
+file = "mods/etched.pw.toml"
+hash = "f2be475fad96949ff8e26e8a03046b1732935b1dbd9b8824e505e7413ec08622"
+metafile = true
+
+[[files]]
 file = "mods/explorers-compass.pw.toml"
 hash = "35bad9f01671b5b4284ad547dab6635b2a029980c88d82007690e9232a5cb420"
 metafile = true
@@ -816,6 +831,11 @@ metafile = true
 [[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "942b02525962980b6176677cca162d27c1210b686985ad11db0055fe39d42a7d"
+metafile = true
+
+[[files]]
+file = "mods/framework.pw.toml"
+hash = "de12d66aca2d481ce0ffe4d47d37afb5ecb0c5444ffe7dc86a79dc9ce159dc92"
 metafile = true
 
 [[files]]
@@ -846,6 +866,11 @@ metafile = true
 [[files]]
 file = "mods/gobber.pw.toml"
 hash = "cac1dc3bc87f45638f37828d1099e31943e119e4766f953ae7b88a2ce4c33415"
+metafile = true
+
+[[files]]
+file = "mods/goblin-traders.pw.toml"
+hash = "29abe36be13fe414e13125140f1c4fe373f7daf79a11ba511e0f77a47ea7f946"
 metafile = true
 
 [[files]]
@@ -936,6 +961,16 @@ metafile = true
 [[files]]
 file = "mods/lendercataclysm.pw.toml"
 hash = "62f78f4c3c3fac7e5f0507e2b7a2fdf854a263d34b45c0295df8a07255c37ead"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-brewery-farm-charm-compat.pw.toml"
+hash = "552866efeddd56f72744826f6fe23bfe6da1d13a03aecb4058445f2eaa7fc7ce"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-farm-charm.pw.toml"
+hash = "87d2fd51e47018c6a15926e42b34603f6c352da6b26c61b90791ba3d910d3479"
 metafile = true
 
 [[files]]
@@ -1079,6 +1114,11 @@ hash = "804736be3ded2a6f89f44522b88d82636209ed203c234ea34b6d6ffdd9ecee54"
 metafile = true
 
 [[files]]
+file = "mods/refurbished-furniture.pw.toml"
+hash = "b1e0e7bf562eb6a1eb939835c19bbc56c46d209eeba8f2b766c0ad39676a389a"
+metafile = true
+
+[[files]]
 file = "mods/repurposed-structures.pw.toml"
 hash = "c361a2f6b24af6723242af19024fef2afe18616de2192e757bd2b8b41f75a806"
 metafile = true
@@ -1180,6 +1220,11 @@ hash = "9175de0d2934149f5d7e1c1a5a94b846a04a6e7a560df87570987f2f77b8d970"
 [[files]]
 file = "mods/towns-and-towers.pw.toml"
 hash = "cab2f1d2bf3b9e4435f02cde12c270f3234599d63fc5c7383eaa9da3e4e9d5bb"
+metafile = true
+
+[[files]]
+file = "mods/travelers-backpack.pw.toml"
+hash = "a2281cd7ab1fd4f8dc2cf97321c04edc753e45abc1647b5e82b672e21c291985"
 metafile = true
 
 [[files]]
